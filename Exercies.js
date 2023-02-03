@@ -49,4 +49,42 @@ console.log(factorialize(10));
 console.log(factorialize(20));
 */
 
+//TODO: Exercise of day 22: 3/2/2023
+
 //?4-Find the Longest Word in a String
+
+/*
+function findLongestWordLength(str) {
+  let words = str.split(" "); //Split each word with this split() method
+  let maxLength = 0; //We will put a value equal to 0
+  for (let i = 0; i < words.length; i++) {
+    if (words[i].length > maxLength) {
+      maxLength = words[i].length;
+    }
+  }
+  //Then in the for bubble it will call the words that are less than the distance and if it finds one that is the greatest with the if of each space. 
+  //Then it will return the longest word with this nested for.
+  return maxLength;
+}
+
+console.log(findLongestWordLength("The quick brown fox jumped over the lazy dog"));
+*/
+
+//?5-Return Largest Numbers in Arrays
+
+/*
+function largestOfFour(arr) {
+  return arr.map(function(group){
+    return Math.max.apply(null, group);
+  });
+  //Lo que hara con el metodo map traer cada subarray y despues trar la principal
+  //Y dentro de este metodo con math.max.apply(null, group) traera el array maximo del mismo
+}
+
+console.log(largestOfFour([[4, 5, 1, 3], [13, 27, 18, 26], [32, 35, 37, 39], [1000, 1001, 857, 1]])); // [5, 27, 39, 1001]
+console.log(([[13, 27, 18, 26], [4, 5, 1, 3], [32, 35, 37, 39], [1000, 1001, 857, 1]]));
+console.log(([[4, 9, 1, 3], [13, 35, 18, 26], [32, 35, 97, 39], [1000000, 1001, 857, 1]]));
+*/
+
+//?6-Confirm the Ending
+
