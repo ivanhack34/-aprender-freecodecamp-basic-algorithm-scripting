@@ -86,5 +86,57 @@ console.log(([[13, 27, 18, 26], [4, 5, 1, 3], [32, 35, 37, 39], [1000, 1001, 857
 console.log(([[4, 9, 1, 3], [13, 35, 18, 26], [32, 35, 97, 39], [1000000, 1001, 857, 1]]));
 */
 
+//TODO: Exercise of day 23: 4/2/2023
+
 //?6-Confirm the Ending
+
+/*
+function confirmEnding(str, target) {
+  return str.substr(-target.length) === target;
+  //Lo que hace que con el parametro str uso el metodo sbstr() para sacar la ultima palabra de ese valor.
+  //Para eso el argumento lo ponemos negativo y lo igualamos al target para que pueda dar el resultado si es o no la ultima letra.
+}
+
+
+console.log(confirmEnding("Bastian", "n"));
+console.log(confirmEnding("Connor", "n"));
+*/
+
+//?7-Repeat a String Repeat a String (No se puede usar el metodo repeat())
+
+/*
+function repeatStringNumTimes(str, num) {
+  let result = '';
+ if (num <= 0) {
+   return result;
+ }
+ for (let i = 0; i < num; i++) {
+   result += str;
+ }
+ return result;
+
+ //Primero ponemos el resultado para que de una variable vacio para que con el bucle vaya ingresando valor
+ //Los bucles son si el numero es menor a 0 no dara nada a repetir y si es mayor a 0 entonces hara un condicion for
+ //Donde si es mayor que 0 entonces repetira la veces que quiere ese texto
+}
+
+console.log(repeatStringNumTimes("abc", 3));
+*/
+
+//?8-Truncate a String
+/*
+function truncateString(str, num) {
+  if (str.length > num) {
+   return str.slice(0, num) + "...";
+ } else {
+   return str;
+ }
+ //Lo que hara es que si el numero del string es mayor al numero entonces que me retorne el string + ...
+ //En el caso de que no, que solo me retorne pero el string sin los ...
+}
+
+console.log(truncateString("A-tisket a-tasket A green and yellow basket", 8));
+*/
+
+//?9-Finders Keepers
 
