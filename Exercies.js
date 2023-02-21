@@ -124,6 +124,7 @@ console.log(repeatStringNumTimes("abc", 3));
 */
 
 //?8-Truncate a String
+
 /*
 function truncateString(str, num) {
   if (str.length > num) {
@@ -138,5 +139,60 @@ function truncateString(str, num) {
 console.log(truncateString("A-tisket a-tasket A green and yellow basket", 8));
 */
 
+//todo: Ejercicio del dia 24: 21/2/2023
+
 //?9-Finders Keepers
+
+/*
+function findElement(arr, func) {
+  let num = undefined;
+  for (let i = 0; i < arr.length; i++) {
+    if (func(arr[i])) {
+      num = arr[i];
+      break;
+    }
+    //Es este lo que hara que el numero retornara indefinido y que con un ciclo for puede llamar cada linea de codigo
+    //Donde dentro tendra una bucle if para llamar un numero a numero hasta conseguir el numero del console log.
+  }
+  return num;
+}
+
+console.log(findElement([1, 2, 3, 4], num => num % 2 === 0));
+//Aqui se buscar cada uno de los numeros hasta buscar el primer par.
+
+*/
+
+//?10-Boo who
+
+/*
+function booWho(bool) {
+  return typeof bool === 'boolean';
+  //Buscara retornar si es un tipo de valor booleano y si no es falso
+}
+
+console.log(booWho(null));
+console.log(booWho([1, 2, 3]));
+console.log(booWho(false));
+*/
+
+//?11-Title Case a Sentence
+
+function titleCase(str) {
+  // Convert the string to lowercase and split it into an array of words
+  const words = str.toLowerCase().split(' ');
+  
+  // Capitalize the first letter of each word
+  const capitalizedWords = words.map(word => word.charAt(0).toUpperCase() + word.slice(1));
+  
+  // Join the capitalized words back into a string
+  return capitalizedWords.join(' ');
+}
+
+console.log(titleCase("I'm a little tea pot"));
+
+//?12-Slice and Splice
+
+
+
+
 
