@@ -177,6 +177,7 @@ console.log(booWho(false));
 
 //?11-Title Case a Sentence
 
+/*
 function titleCase(str) {
   // Convert the string to lowercase and split it into an array of words
   const words = str.toLowerCase().split(' ');
@@ -189,10 +190,66 @@ function titleCase(str) {
 }
 
 console.log(titleCase("I'm a little tea pot"));
+*/
+
+//todo: Ejercicio del dia 25: 22/2/2023
 
 //?12-Slice and Splice
 
+/*
+function frankenSplice(arr1, arr2, n) {
+  // Create a copy of arr2 to avoid modifying the original array
+  const newArr = arr2.slice();
+  
+  // Insert the elements of arr1 into newArr at the specified index
+  newArr.splice(n, 0, ...arr1);
+  
+  // Return the new array
+  return newArr;
+}
 
+console.log(frankenSplice([1, 2, 3], [4, 5, 6], 1));
+console.log(frankenSplice([1, 2], ["a", "b"], 1));
+*/
 
+//?13-Falsy Bouncer
+
+/*
+function bouncer(arr) {
+  // Filter the array to remove falsy values
+ const filteredArr = arr.filter(Boolean);
+ 
+ // Return the new array
+ return filteredArr;
+}
+
+console.log(bouncer([7, "ate", "", false, 9]));
+console.log(bouncer(["a", "b", "c"]));
+console.log(bouncer([false, null, 0, NaN, undefined, ""]));
+*/
+
+//?14-Where do I Belong
+
+/*
+function getIndexToIns(arr, num) {
+  // Add the number to the array
+ arr.push(num);
+ 
+ // Sort the array in ascending order
+ arr.sort((a, b) => a - b);
+ 
+ // Find the index of the number in the sorted array
+ const index = arr.indexOf(num);
+ 
+ // Return the index
+ return index;
+}
+
+console.log(getIndexToIns([40, 60], 50));
+console.log(getIndexToIns([10, 20, 30, 40, 50], 35));
+console.log(getIndexToIns([10, 20, 30, 40, 50], 30) );
+*/
+
+//?15-Mutations
 
 
