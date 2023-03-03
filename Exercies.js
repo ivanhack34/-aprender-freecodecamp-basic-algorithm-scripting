@@ -176,7 +176,6 @@ console.log(booWho(false));
 */
 
 //?11-Title Case a Sentence
-
 /*
 function titleCase(str) {
   // Convert the string to lowercase and split it into an array of words
@@ -250,6 +249,59 @@ console.log(getIndexToIns([10, 20, 30, 40, 50], 35));
 console.log(getIndexToIns([10, 20, 30, 40, 50], 30) );
 */
 
+//todo: Ejercicio del dia 26: 3/3/2023
+
 //?15-Mutations
 
+/*
+function mutation(arr) {
+  const str1 = arr[0].toLowerCase();
+  const str2 = arr[1].toLowerCase();
+  //Primero mostrar el primer valor y segundo en minuscula para que no haya problemas.
 
+for (let i = 0; i < str2.length; i++) {
+  const letter = str2[i];
+  if (!str1.includes(letter)) {
+    return false;
+  }
+}
+
+return true;
+//Luego en un for se iterara cada palabra del segundo valor del array
+//Despues dentro del for mostrar en cada valor del segundo valor del array y si muestra que esta presente junto
+//Con el primero sera true y si no sera falso.
+}
+
+
+
+console.log(mutation(["hello", "hey"])); //False
+console.log(mutation(["hello", "Hello"])); //True
+console.log(mutation(["zyxwvutsrqponmlkjihgfedcba", "qrstu"])); //True
+*/
+
+//?16-Chunky Monkey
+
+/*
+function chunkArrayInGroups(arr, size) {
+  let result = [];
+  let i = 0;
+
+  while (i < arr.length) {
+    result.push(arr.slice(i, i + size));
+    i += size;
+  }
+
+  return result;
+  //Lo primero poner un valor array para almacenar el resultado
+  //Despues ponemos un valor que inicie desde 0
+  //Ahora creamos un bucle while Donde lo buscara directamente desde el arreglo por cada valor
+  //Despues con el metodo push mostrara cada resultad y dentro ponemos el parametro arr un slice para que divida por pedazos
+  //La cantidad de arreglos que quiera cortar
+  //Despues sumara el valor dependiendo la cantidad que quiere al lado y finalmente retorna el resultado
+}
+
+
+console.log(chunkArrayInGroups(["a", "b", "c", "d"], 2)); //[ [ 'a', 'b' ], [ 'c', 'd' ] ]
+console.log(chunkArrayInGroups(["apples", "bananas", "cherries", "dates"], 4)); //[ [ 'apples', 'bananas', 'cherries', 'dates' ] ]
+console.log(chunkArrayInGroups([0, 1, 2, 3, 4, 5], 3)); //[ [ 0, 1, 2 ], [ 3, 4, 5 ] ]
+*/
